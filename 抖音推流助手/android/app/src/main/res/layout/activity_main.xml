@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- 标题区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎥 抖音推流助手"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FF1744"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支持OKB、VR、ATF、ATS推流协议"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+    </LinearLayout>
+
+    <!-- 状态显示区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📊 当前状态"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请先登录抖音账号"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:background="#F8F9FA"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <!-- 推流信息区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔑 推流信息"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_stream_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击获取推流码按钮获取推流地址"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:background="#F8F9FA"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <!-- 操作按钮区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎮 操作控制"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 登录按钮 -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔐 登录抖音账号"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#FF1744"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp" />
+
+        <!-- 获取推流码按钮 -->
+        <Button
+            android:id="@+id/btn_get_stream_key"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔑 获取推流码"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#2196F3"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp" />
+
+        <!-- 开始推流按钮 -->
+        <Button
+            android:id="@+id/btn_start_stream"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🚀 开始推流"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#4CAF50"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp" />
+
+        <!-- 停止推流按钮 -->
+        <Button
+            android:id="@+id/btn_stop_stream"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="⏹️ 停止推流"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#FF9800"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+
+    <!-- 底部信息 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="版本 1.0 | 支持Android 7.0+"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
